@@ -1,6 +1,7 @@
 <html ng-app="rovarApp">
 	<head>
 		<meta charset="UTF-8">
+		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 		<link rel="stylesheet" href="css/rovar.css">
@@ -8,14 +9,12 @@
 		<script src="rovarCtrl.js"></script>
 	</head>
 	<body ng-controller="rovarCtrl">
-		<centered>
-			<h1> RövarspråkÖversättare</h1>
-			<p>
-			<textarea ng-model="rovar_text" ng-change="convert(rovar_text)" rows="{{row}}" cols="{{cols}}">  </textarea>
-			</p>
-			<p>
-			<textarea disabled class="transText" ng-readonly="true" rows="{{row}}" cols="{{cols}}">{{text}}</textarea>
-			</p>
-		</centered>
+		<h1> RövarspråkÖversättare</h1>
+		<p>
+		<textarea ng-model="rovar_text" ng-change="convert(rovar_text)" rows="{{row}}" cols="{{cols}}">  </textarea>
+		</p>
+		<p>
+		<textarea disabled class="transText" ng-readonly="true" rows="{{row}}" cols="{{cols}}">{{text}}</textarea>
+		</p>
 	</body>
 </html>

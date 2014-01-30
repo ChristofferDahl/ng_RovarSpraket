@@ -5,9 +5,9 @@ rovarApp.controller('rovarCtrl', function($scope) {
 	$scope.cols = 50;
 	
 	$scope.convert = function(text) {
-		var kons = "bcdfghjklmnpqrstvwxz";
-		
+		var kons = "bcdfghjklmnpqrstvwxz";		
 		var textList = text.split("");
+		
 		for(var t in textList) 
 		{
 			console.log(textList[t]);
@@ -17,8 +17,8 @@ rovarApp.controller('rovarCtrl', function($scope) {
 			}
 			
 		}
+		
 		text = textList.join("");
-		console.log(text);
 		$scope.text = text;
 		return text;
 	}
