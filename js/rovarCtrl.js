@@ -10,17 +10,17 @@ rovarApp.controller('rovarCtrl', function($scope) {
 		
 		for(var t in textList) 
 		{
-			console.log(textList[t]);
 			if (kons.search(textList[t]) !== -1)
 			{
 				textList[t] = textList[t] + 'o' + textList[t];
 			}
 			
 		}
-		
 		text = textList.join("");
 		$scope.text = text;
+		
 		return text;
+
 	}
 });
 

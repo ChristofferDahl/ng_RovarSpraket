@@ -6,11 +6,12 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 		<link rel="stylesheet" href="css/rovar.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
-		<script src="rovarCtrl.js"></script>
+		<link rel="stylesheet" href="css/animate.css"></link>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+		<script src="js/rovarCtrl.js"></script>
 	</head>
 	<body ng-controller="rovarCtrl">
-		<h1> RövarspråkÖversättare</h1>
+		<h1 class="animated slideInLeft"> RövarspråkÖversättare</h1>
 		<p>
 		<textarea ng-model="rovar_text" ng-change="convert(rovar_text)" rows="{{row}}" cols="{{cols}}">  </textarea>
 		</p>

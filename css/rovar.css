@@ -6,6 +6,10 @@ textarea {
 	
 }
 
+h1 {
+	font-family: "Myriad Pro"
+}
+
 textarea.transText {
 	background-color: lightyellow;
 }
