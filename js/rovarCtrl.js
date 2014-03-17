@@ -13,9 +13,9 @@ rovarApp.controller('rovarCtrl', function($scope) {
 		
 		for(var t in textList) 
 		{
-			if (kons.search(textList[t]) !== -1)
+			if (kons.indexOf(textList[t].toLowerCase()) !== -1)
 			{
-				textList[t] = textList[t] + 'o' + textList[t];
+				textList[t] = textList[t] + 'o' + textList[t].toLowerCase();
 			}
 			
 		}
