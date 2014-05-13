@@ -1,15 +1,11 @@
-html, body {
-	text-align: center;
-}
 textarea {
     resize: none;
-	
 }
 
 h1 {
 	font-family: "Myriad Pro"
 }
 
-textarea.transText {
-	background-color: lightyellow;
+textarea{
+	margin-bottom: 10px;
 }

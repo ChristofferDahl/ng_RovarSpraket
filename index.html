@@ -3,20 +3,17 @@
 		<meta charset="UTF-8">
 		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 		<title>RövarspråkÖversättare</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-		<link rel="stylesheet" href="css/rovar.css">
-		<link rel="stylesheet" href="css/animate.css"></link>
- 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
-		<script src="js/rovarCtrl.js"></script>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/rovar.css"> 		
 	</head>
-	<body ng-controller="rovarCtrl">
+	<body class="col-md-4 col-md-offset-4" ng-controller="rovarCtrl">
 		<h1 class="animated slideInLeft"> RövarspråkÖversättare</h1>
-		<p>
-		<textarea ng-model="rovar_text" ng-change="convert(rovar_text)" rows="{{row}}" cols="{{cols}}">  </textarea>
-		</p>
-		<p>
-		<textarea disabled class="transText" ng-readonly="true" rows="{{row}}" cols="{{cols}}">{{text}}</textarea>
-		</p>
+		
+		<textarea class="form-control" ng-model="rovar_text" ng-change="convert(rovar_text)" rows="{{row}}" cols="{{cols}}">  </textarea>
+		<textarea class="form-control" disabled class="transText" ng-readonly="true" rows="{{row}}" cols="{{cols}}">{{text}}</textarea>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+		<script src="js/rovarCtrl.js"></script>
 	</body>
 </html>
